@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.27.1.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: li Cai Hong Li, ynzfkj, LIC=RC9MM-XCRBE-IGD7N-YUWK1-YHSEY-QK8VF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.27.1.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\bin\
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.27.1.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.6.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+E:\project\USER\Smart_Fish_Tank.uvprojx
+Project File Date:  06/12/2021
+
+<h2>Output:</h2>
+*** Using Compiler '', folder: 'C:\Keil_v5\ARM\ARMCC\bin\'
+Build target 'Smart_Fish_Tank'
+creating preprocessor file for main.c...
+compiling main.c...
+..\GUI_APP\guider_fonts\guider_fonts.h(17): warning:  #1-D: last line of file ends without a newline
+      
+main.c(107): warning:  #191-D: type qualifier is meaningless on cast type
+  				(const TickType_t) LCD_STK_SIZE,
+main.c(115): warning:  #191-D: type qualifier is meaningless on cast type
+                  (const TickType_t ) 1000,/*第二个参数，是定时时间，毫秒级别10min(600000)*/
+main.c(116): warning:  #191-D: type qualifier is meaningless on cast type
+                  (const UBaseType_t) pdTRUE,//第三个参数，pdFALSE只定时一次，pdTRUE自动加载
+main.c(123): warning:  #191-D: type qualifier is meaningless on cast type
+                  (const TickType_t ) 60,/*第二个参数，是定时时间，毫秒级别60ms*/
+main.c(124): warning:  #191-D: type qualifier is meaningless on cast type
+                  (const UBaseType_t) pdTRUE,//第三个参数，pdFALSE只定时一次，pdTRUE自动加载
+main.c: 6 warnings, 0 errors
+linking...
+Program Size: Code=178472 RO-data=64396 RW-data=876 ZI-data=1165540  
+FromELF: creating hex file...
+After Build - User command #2: fromelf --bin -o "..\OBJ\System.bin" "..\OBJ\System.axf"
+"..\OBJ\System.axf" - 0 Error(s), 6 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.14.0.pack
+                Keil.STM32F4xx_DFP.2.14.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Smart_Fish_Tank
+  C:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.14.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
